@@ -3,7 +3,7 @@
 针对模拟网关服务开展接口自动化回归测试，通过真实HTTP调用接口。覆盖正常业务、异常参数、边界值场景，YAML维护测试数据，pytest实现用例管理与日志输出。
 
 ### 技术栈
-- Python3、pytest
+- Python3.12、pytest
 - requests
 - pyyaml
 
