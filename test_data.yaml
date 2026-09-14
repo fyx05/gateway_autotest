@@ -1,0 +1,10 @@
+config_test_cases:
+  - name: "正常配置网络"
+    payload: {"network": {"ip": "192.168.1.1"}}
+    expected_code: 0
+  - name: "缺失network参数"
+    payload: {}
+    expected_code: 400
+  - name: "异常IP格式"
+    payload: {"network": {"ip": "999.999.999.999"}}
+    expected_code: 0  # 模拟网关不校验格式，只校验字段pytest --reruns 2 --html=report.html --self-contained-html
